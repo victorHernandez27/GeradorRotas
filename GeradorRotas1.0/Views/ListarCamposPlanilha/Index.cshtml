@@ -1,0 +1,16 @@
+﻿@model ColunaExcel
+
+@{
+    ViewData["Title"] = "Obter Colunas Excel";
+}
+
+<div>
+    @using(Html.BeginForm())
+    {
+        @Html.ListBoxFor(m => m.ColunasSelecionada, Model.Colunas)
+        <br /><br />
+        <input type="submit" value="Submit" />
+    }
+
+
+</div>
